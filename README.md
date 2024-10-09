@@ -1,2 +1,4 @@
-# tutor-site
-A site demo for a study website.
+# Sirat
+
+A platform for learners to learn.
+
