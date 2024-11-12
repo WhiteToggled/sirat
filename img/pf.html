@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pf.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Numans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="Logoo" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+  a          <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="newFlex">
+        <div id="TOC">
+            <h3>Table of Contents</h3>
+            <ol id="tocList">
+                <li>
+                    <a href="#1.">Chapter 1</a>
+                    <ul>
+                        <li><a href="#1.1.">1.1.    Introduction</a></li>
+                        <li><a href="#1.2.">1.2.    A Brief Overview of the History of Computers</a></li>
+                        <li>
+                            <a href="#1.3.">1.3.    Elements of a Computer System</a>
+                            <ul>
+                                <li><a href="#1.3.1.">&nbsp 1.3.1.    Hardware</a></li>
+                                <li><a href="#1.3.2.">&nbsp 1.3.2.    CPU and RAM</a></li>
+                                <li><a href="#1.3.3.">&nbsp 1.3.2.    Secondary storage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#1.4.">1.4.    Input /Output Devices</a>
+                            <ul>
+                                <li><a href="1.4.1.">&nbsp 1.4.1. Hardware</a></li>
+                                <li><a href="1.4.2.">&nbsp 1.4.2. Software</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#1.5.">1.5. The Language of a Computer </a></li>
+                        <li><a href="#1.6. ">1.6. The Evolution of Programming Languages </a></li>
+                        <li><a href="#1.7.">1.7. Processing a C++ Program </a></li>
+                        <li>
+                            <a href="#1.8.">1.8. Analysis–Coding–Execution Cycle</a>
+                            <ul>
+                                <li><a href="#1.8.1.">&nbsp 1.8.1. Process of algorithm design</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#1.9.">1.9. Programming Methodologies </a>
+                            <ul>
+                                <li><a href="#1.9.1.">&nbsp 1.9.1. Structured Programming </a></li>
+                                <li><a href="#1.9.2.">&nbsp 1.9.2. Object-Oriented Programming </a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    
+        <div id="book">
+            <h1 id="header">Programming Fundamentals</h1>
+            <h2 id="1.">Chapter 1:  An Overview of Computers and Programming Languages</h2>
+            <h3 id="1.1.">Introduction:</h3>
+                <p>In the past, the internet was not as common as it is today. Now, students use the internet to help them with their schoolwork and many other things. Computers need software to work, and software is created using programming languages. C++ is a programming language that can be used to create software. </p>
+            <h3 id="1.2.">A Brief Overview of the History of Computers </h3>
+            <p>The abacus, an ancient device using beads for calculations, was the first calculating machine. In the 17th century, Blaise Pascal invented the Pascaline, which could add and subtract. Later, Gottfried von Leibniz created a machine that could perform all four basic arithmetic operations. </p>
+
+            <p>In the 1800s, Charles Babbage designed the difference engine and the analytical engine, which could perform complex calculations. Ada Lovelace, considered the first computer programmer, wrote programs about Babbage's machines. </p>
+                
+            <p>The idea of storing information on punched cards, used in the weaving industry, proved to be important for the development of computers. </p>
+                
+            <p>At the end of the 19th century, Herman Hollerith invented a calculating machine that used punched cards to store data. Hollerith's machine was immensely successful, leading to the creation of IBM. </p>
+                
+            <p>The first computer-like machine was the Mark I, built-in 1944. It was followed by the ENIAC in 1946, which was much faster and more powerful. This machine also used punched cards to feed data into the machine.  </p>
+                
+            <p>John von Neumann's design rules for computers, which included components such as an arithmetic logic unit, a control unit, memory, and input/output devices, are still used today. </p>
+            <p>The invention of transistors in 1956 led to smaller, faster, more reliable, and more energy-efficient computers. This led to the development of early programming languages like FORTRAN and COBOL. Later, integrated circuit "chips" replaced transistors, vastly increasing processing power. </p>
+
+            <p>The invention of the microprocessor in 1970 enabled the development of personal computers, with milestones including the first Apple computer in 1977 and IBM’s PC in 1981. By the mid-1990s, affordable PCs became widely accessible. </p>
+
+            <p>Modern computers are now powerful and versatile, supporting applications like artificial intelligence, expert systems, and GPS. They facilitate tasks from checking email to making reservations and managing finances. Despite different types (mainframe, midsize, micro), all computers share some basic elements.  </p>
+            <h3 id="1.3.">Elements of a Computer System </h3>
+            <p>
+                A computer is an electronic device that can perform commands. The basic commands that a computer performs are input (get data), output (display result), storage, and performance of arithmetic and logical operations. There are two main components of a computer system: hardware and software. 
+            </p>
+            <h4 id="1.3.1.">Hardware </h4>
+            <p>Major hardware components include the central processing unit (CPU), main memory (RAM), input/output devices, and secondary storage. Examples of input devices are the keyboard, mouse, and secondary storage. Examples of output devices are the screen, printer, and secondary storage. </p>
+            <h4 id="1.3.2.">Central Processing Unit and Main Memory </h4>
+            <div class="parent">
+                <p class = "images">The CPU is the "brain" of a computer and the most expensive piece of hardware in a computer. The more powerful the CPU, the faster the computer. Arithmetic and logical operations are carried out inside the CPU. Some components are shown in the given figure. RAM is connected directly to the CPU.  All programs and data must be loaded into main memory before they can be used. When the computer is turned off, everything in the main memory is lost. Main memory is an ordered sequence of cells called memory cells, and each cell has a unique location called the address of the cell. These addresses help access the information stored in the cell. Today's computers come with main memory consisting of millions to billions of cells. The content of a cell can be either a programming instruction or data and is stored as sequences of 0s and 1s. The memory addresses are also expressed as sequences of 0s and 1s. </p>
+                <img src="./assets/elements.png" />
+            </div>
+            <h4 id="1.3.3.">Secondary storage </h4>
+            <p>Programs and data must be loaded into main memory for processing, but since main memory is cleared when the computer is turned off, information needs to be saved on a separate device for permanent storage. This permanent storage, called secondary storage, includes devices like hard disks, flash drives, and CD-ROMs, which are directly connected to main memory to allow data transfer.</p>
+            <h3 id="1.4.">Input /Output Devices </h3>
+            <h4 id="1.4.1.">Hardware</h4>
+            <p>To perform tasks, a computer needs <span class="bold">input devices</span> to receive data and programs and <span class="bold">output devices</span> to display results. Examples of input devices include the keyboard, mouse, scanner, camera, and secondary storage. Output devices include the monitor, printer, and secondary storage. </p>
+            <h4 id="1.4.2.">Software </h4>
+            <p>
+                <p>Software consists of programs designed for specific tasks, written in programming languages, and categorized into system and application programs.  </p>
+
+                <p><span class="bold">System programs</span> manage the computer, with the operating system (OS) loading first to handle activities like memory, storage, and input/output management. Popular OS examples include Windows 10, Mac OS X, Linux, and Android.  </p>
+                
+                <p><span class="bold">Application programs</span> perform specific tasks, such as word processing, spreadsheets, and games, running under the control of the OS. </p>
+            </p>
+            <h3 id="1.5.">The Language of a Computer </h3>
+            <p> When you press a key, like "A," the computer stores it as a digital signal - a sequence of 0s and 1s, or binary code inside the main memory.  </p>
+
+            <p>Computers, as electronic devices, use digital signals (0s for low voltage, 1s for high voltage) rather than analog signals, which are continuous waveforms.  </p>
+
+            <p>Digital signals allow precise data transfer, unlike analog, which degrades with copying. This binary system is called machine language.  </p>
+
+            <p>Each 0 or 1 is a bit, and a sequence of 8 bits forms a byte. Table 1-1 summarizes the terms used to describe various numbers of bytes.  </p>
+
+            <p>Each character (letter, number, or symbol) on your keyboard is encoded as a unique sequence of bits. The most common encoding scheme is the American Standard Code for Information Interchange (ASCII), which is a 7-bit system with 128 characters numbered 0 to 127.  </p>
+
+            <p>For example, in ASCII, "A" is represented by the binary code 1000001 (position 65) and is the 66th character. This is because, in the ASCII data set, the position of the first character is 0. Each ASCII code corresponds to a binary representation of the character's position in the set.  </p>
+
+            <p>Inside the computer, each character is stored as a byte (8 bits). ASCII, a 7-bit code, requires an extra 0 added to the left for an 8-bit representation, so "A" (ASCII 65) becomes 01000001, and "3" (ASCII 51) becomes 00110011.  </p>
+
+            <p>Unicode is a larger encoding scheme that uses 16 bits (2 bytes) to represent 65,536 characters, supporting a wide range of global languages beyond English. It was created to represent a variety of characters and is continuously expanding. </p>
+            
+            <img src="./assets/bytes.png" />
+            <h3 id="1.6.">The Evolution of Programming Languages </h3>
+            <p>Machine language is the most basic language of a computer, using binary codes (bits) to provide instructions. Since each computer’s machine language can differ, early programming was difficult and error-prone as it required memorizing specific binary codes and data locations.  </p>
+            <p>To simplify programming, assembly language was developed, using mnemonics instead of binary codes. For the same calculation, assembly language instructions are easier to read: <br />
+                <div class="codeBlock"> <br />
+                LOAD rate  <br />
+                <br />
+                MULT hours <br /> 
+                <br />
+                STOR wages <br /> <br />
+                </div>
+             </p>
+            <p>An <span class="bold">assembler</span> then translates assembly language into machine language, since a computer cannot execute assembly language instructions directly.</p>
+            <p>High-level languages like BASIC, FORTRAN, COBOL, C++, Java, and Python were developed to make programming even more intuitive.</p>
+            <p>This code is closer to natural language and easier to understand. To execute high-level code, a <span>compiler</span> is needed to translate the code into machine code. </p>
+            <h3 id="1.7.">Processing a C++ Program </h3>
+            <p>To run a C++ program, the code must be translated into machine language, as computers only understand this basic language.  
+
+                Since computers only understand machine language, C++ code must be translated into machine language before execution. This section reviews the steps required to execute C++ programs. 
+            </p>
+            <ol>
+                <li><p><span class="bold">Create Source Code:</span> Use a text editor to write a C++ program, saving it with a cpp extension (e.g., FirstCPPProgram.cpp). </p></li>
+                <li><p><span class="bold">Preprocessor Directives:</span> Any statements starting with #, like #include <iostream>, called preprocessor directives are processed by the preprocessor. </p></li>
+                <li><p><span class="bold">Compile the Program:</span> The compiler checks the source code for syntax errors and translates it into machine language, producing an object program. </p></li>
+                <li><p><span class="bold">Linking:</span> Use an Integrated Development Environment (IDE) that includes prewritten code from libraries. The linker combines the object program with library code to create executable code. </p></li>
+                <li><p><span class="bold">Loading:</span> The loader loads the executable program into main memory for execution. </p></li>
+                <li><p><span class="bold">Execution:</span> Finally, execute the program. </p></li>
+            </ol>
+            <img src="./assets/execution.png" />
+            <h3 id="1.8.">Analysis–Coding–Execution Cycle</h3>
+            <ol>
+                <p>
+                    <li><span>Analyze the problem:</span> Outline the problem requirements and design an algorithm to solve it. </li>
+                    <li><span>Implement the algorithm:</span> Code it in a programming language like C++ and verify its functionality. </li>
+                    <li><span>Maintain the program:</span> Use and update the program as needed if the problem scope changes. </li>
+            </ol>
+                    <br />
+                </p>
+            <h4 id="1.8.1.">Process of algorithm design</h4>
+            <p>
+                <ol>
+                    <li> <span class="bold">Understand the problem</span> fully. </li>
+                    <li> <span class="bold">Determine the requirements:</span> Identify if the program needs user interaction, data manipulation, specific output formats, etc. For data manipulation, review sample data to understand its structure; for output, clarify the format and structure of results. </li>
+                    <li> <span class="bold">Break the problem into subproblems</span>if it is complex. Analyze each subproblem individually, repeating the initial analysis and design steps as needed. </li>
+                </ol>
+            </p>
+            <h3 id="1.9.">Programming Methodologies </h3>
+            <h4 id="1.9.1.">Structured Programming </h4>
+            <p>Structured design involves dividing a problem into smaller subproblems, analyzing each subproblem, and obtaining solutions to solve them. These solutions are then combined to solve the overall problem. </p>  
+
+            <p>This process of implementing structured design is known as structured programming, which is also referred to as top-down design, bottom-up design, stepwise refinement, and modular programming. </p>
+            <h4 id="1.9.2.">Object-Oriented Programming </h4>
+            <p>Object-Oriented Design (OOD) is a programming methodology that begins by identifying components called objects which form the basis of the solution and interact with one another. Each object consists of data and operations that manipulate that data, forming a single unit. The final program in OOD is a collection of interacting objects, implemented through an Object-Oriented Programming (OOP) language. 
+
+                To design and use objects effectively, it’s essential to understand data representation, manipulation techniques, and operational implementation. Operations are implemented using algorithms and separated into functions, as complex programs may involve many operations on a single data element.  
+                
+                Some algorithms require decision-making (selection), others involve repeated statements (repetition), and some may require both. 
+                
+                C++ uses <span class="bold">classes</span> to combine data and operations into a unit.  </p>
+        </div>
+    </div>
+</body>
+</html>
