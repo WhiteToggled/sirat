@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat| Calculus</title>
+    <link rel="stylesheet" href="calcstyles.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- Link to local KaTeX -->
+    <link rel="stylesheet" href="katex/katex.min.css">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 1%;">
+        <h1>Average and Instantaneous Rate of Change</h1>
+        <p>
+            A variable which can assign any value independently is called the <b>independent</b> variable, 
+            and the variable which depends on some independent variable is called the <b>dependent</b> variable.
+            <br>
+            For example
+            \[ y = f (x) = x^2 - 1 \]
+            if \( x = 0, 1, 2, 3, ... \) then,
+            \[ f (0) = -1 \]
+            \[ f (1) = 0 \]
+            \[ f (2) = 3 \]
+            \[ f (3) = 8 \]
+            We see that as \(x\) behaves independently, we call it the <b>independent</b> variable. 
+            But the behavior of \(y\) or \(f (x)\) depends on the variable \(x\), so we call it the <b>dependent</b> variable.
+        </p>
+        <br>
+        <h2>Increment</h2>
+        <p>
+            Literally, the word increment means increase, 
+            but in mathematics this word covers <b>both increase as well as decrease</b> because the increment may be positive or negative. 
+            Simply put, the word increment in mathematics means “the <b>difference</b> between two values of variables.”
+            <br>
+            <i>The final value minus the initial value is called an <b>increment</b></i> in the variable. 
+            The increment in \(x\) is denoted by the symbols \(\delta x\) or \(\Delta x\) (read as “delta x”).
+            <br>
+            If \(y = f (x)\), and \(x\) changes from an initial value \(x_0\) to the final value \(x_1\), 
+            then \(y\) changes from an initial value \(y_0 = f (x_0)\) to the final value \(y_1 = f (x_1)\).
+            <br>
+            Thus, the increment in \(x\)
+                \[ \Delta x = x_1 - x_0 \]
+            produces a corresponding increment in \(y\)
+            \[ \Delta y = y_1 - y_0 = f (x_1) - f (x_0) \]
+        </p>
+        <br>
+        <h2>Average Rate of Change</h2>
+        <p>
+            If \(y = f (x)\) is a real valued continuous function in the interval \( (x_0, x_1) \), 
+            then the average rate of change of \(y\) with respect to \(x\) over this interval is
+            \[ \frac{f (x_1) - f (x_0)}{x_1 - x_0} \]
+            But \( \Delta x = x_1 - x_0 \Rightarrow x_1 = \Delta x + x_0 \)
+            \[ \therefore \frac{f (x_0 + \Delta x) - f (x_0)}{\Delta x} \]
+        </p>
+        <br>
+        <h2>Instantaneous Rate of Change</h2>
+        <p>
+            If \(y = f (x)\) is a real valued continuous function in the interval \((x_0, x_1)\), 
+            then the average rate of change of \(y\) with respect to \(x\) over this interval is
+            \[lim_{x_1 \rightarrow x_0}{\frac{f (x_1) - f (x_0)}{(x_1 - x_0 )}}\] 
+            But \( \Delta x = x_1 - x_0 \Rightarrow x_1 = \Delta x + x_0 \)
+            <br>
+            This shows that \( \Delta x \to 0\), as \( x_1 \to x_0 \),
+            \[ \therefore lim_{\Delta x \to 0}\frac{f (x_0 + \Delta x) - f (x_0)}{( \Delta x )}\] 
+        </p>
+
+
+        <div style="padding: 1%; display: flex; justify-content: space-between;">
+            <a href="calc_formulasheet.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    ← Previous Page
+                </button>
+            </a>
+            
+            <a href="derivative_of_function.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    Next Page →
+                </button>
+            </a>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

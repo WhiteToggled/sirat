@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat| Calculus</title>
+    <link rel="stylesheet" href="calcstyles.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- Link to local KaTeX -->
+    <link rel="stylesheet" href="katex/katex.min.css">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 1%;">
+        <h1>Derivative of a Function</h1>
+        <p>
+            Let \(y = f (x)\) be a given function of \(x\). 
+            Give to \(x\) a small increment \(\Delta x\) and let the corresponding increment of \(y\) by \( \Delta y \), 
+            so that when \(x\) becomes \(x + \Delta x\), then \(y\) becomes \(y + \Delta y\) and we have:
+            <br>
+            \[ y + \Delta y = f (x + \Delta x) \]
+            \[ \therefore \Delta y = f (x + \Delta x) - f (x) \]
+
+            Dividing both sides by \( \Delta x \), then 
+            \[ \frac{\Delta y}{\Delta x} = \frac{f (x + \Delta x) - f (x)}{\Delta x}\]
+            Taking limit of both sides as \( \Delta x \rightarrow 0\)
+            \[ \lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x} = \lim_{\Delta x \to 0}\frac{f (x + \Delta x) - f (x)}{\Delta x}\]
+        </p>
+        <p>
+            Thus, if \(y\) is the function of \(x\), then \(\lim_{\Delta x \to 0}\frac{f (x + \Delta x) - f (x)}{\Delta x}\) is 
+            called the derivative or the differential coefficient of the function or the derivative 
+            of \(f (x)\) with respect to \(x\) and is denoted by \(f'(x)\), \(y'\), \(Dy\) or  \(\frac{dy}{dx}\).
+        </p>
+        <br>
+        <h2>Notation</h2>
+        <table>
+            <tr>
+                <td><h3>Name of Mathematician</h3></td>
+                <td><h3>Liebniz</h3></td>
+                <td><h3>Newton</h3></td>
+                <td><h3>Lagrange</h3></td>
+                <td><h3>Cauchy</h3></td>
+            </tr>
+            <tr>
+                <td><h3>Notation for Derivative</h3></td>
+                <td>\( \frac{dy}{dx} \) or \( \frac{df}{dx} \)</td>
+                <td>\(y'\)</td>
+                <td>\(f'(x)\)</td>
+                <td>\(Df (x)\)</td>
+            </tr>
+        </table>
+        <br>
+        <h2>Remarks</h2>
+        <div style="padding-left: 7%; padding-right: 7%;">
+        <ol type="I">
+            <li>
+                <p>
+                    The student should observe the difference between \( \frac{\Delta y}{\Delta x} \) and  \(\frac{dy}{dx}\). 
+                    Where \( \frac{\Delta y}{\Delta x} \) is the quotient of the increment of \(y\) and \(x\) that is, 
+                    its numerator and denominator can be separated, 
+                    but \(\frac{dy}{dx}\) is a single symbol for the limiting value of the fraction \( \frac{\Delta y}{\Delta x} \) when \(\Delta y\) and \(\Delta x\) can be separated.
+                </p>
+            </li>
+            <li>
+                <p>
+                    \(\frac{d}{dx}\) attached to any function means its differential coefficient with respect to \(x\).
+                </p>
+            </li>
+            <li>
+                <p>
+                    The phrase “with respect to” will often be abbreviated into w.r.t
+                </p>
+            </li>
+        </ol>
+        </div>
+
+
+        <div style="padding: 1%; display: flex; justify-content: space-between;">
+            <a href="rate_of_change.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    ← Previous Page
+                </button>
+            </a>
+            
+            <a href="derivative_of_sine.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    Next Page →
+                </button>
+            </a>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

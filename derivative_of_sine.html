@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat| Calculus</title>
+    <link rel="stylesheet" href="calcstyles.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- Link to local KaTeX -->
+    <link rel="stylesheet" href="katex/katex.min.css">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 1%;">
+        <h1>Derivative of Sine</h1>
+        <p style="padding-right: 15%; padding-left: 15%;">
+            We shall prove the formula for the derivative of the sine function by using the first principle.
+            Let us suppose that the function is of the form \(y = \sin x\).
+            First, we take the increment or small change in the function:
+            \[ \Delta y = \sin (x + \Delta x) - \sin (x) \]
+            Since,
+            \[ \sin(A+B) = \sin(A)\cos(B) + \cos(A)\sin(B) \]
+            we get:
+            \[ \Delta y = \sin(x)\cos(\Delta x) + \cos(x)\sin(\Delta x) - \sin(x) \]
+            Dividing both sides by \(\Delta x \), we get:
+            \[ \frac{\Delta y}{\Delta x} = \frac{\sin(x)(\cos(\Delta x) - 1) + \cos(x)\sin(\Delta x)}{\Delta x} \]
+            \[ \frac{\Delta y}{\Delta x} = \sin(x)\frac{(\cos(\Delta x) - 1)}{\Delta x} + \cos(x)\frac{\sin(\Delta x)}{\Delta x} \]
+            Taking the limit of both sides as \( \Delta x \to 0 \), we have
+            \[ \lim_{\Delta x \to 0}\frac{\Delta y}{\Delta x} = \sin(x)\lim_{\Delta x \to 0}\frac{(\cos(\Delta x) - 1)}{\Delta x} + \cos(x)\lim_{\Delta x \to 0}\frac{\sin(\Delta x)}{\Delta x} \]
+            Given that \(\quad \lim_{\Delta x \to 0}\frac{(\cos(\Delta x) - 1)}{\Delta x}  = 0 \quad \) and \(\quad \lim_{\Delta x \to 0}\frac{\sin(\Delta x)}{\Delta x}  = 1\),
+            \[ \frac{dy}{dx} = \sin(x)(0) + \cos(x)(1) \]
+            \[ \frac{dy}{dx} = \cos(x)(1) \]
+
+        </p>
+        <br>
+        
+
+        <div style="padding: 1%; display: flex; justify-content: space-between;">
+            <a href="derivative_of_function.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    ← Previous Page
+                </button>
+            </a>
+            
+            <a href="calc.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    Next Page →
+                </button>
+            </a>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>

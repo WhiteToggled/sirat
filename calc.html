@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat| Calculus</title>
+    <link rel="stylesheet" href="calcstyles.css">
+    <link rel="stylesheet" href="nav.css">
+
+      <!-- Link to local KaTeX -->
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <script defer src="/katex/katex.min.js"></script>
+    
+    <!-- Auto-render extension (local) -->
+    <script defer src="/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof renderMathInElement === "function") {
+            console.log("KaTeX auto-render is loaded.");
+            } else {
+            console.error("KaTeX auto-render is not loaded.");
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+            ]
+        });
+        });
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 1%;">
+        <h1>Derivatives</h1>
+        <p>
+            Calculating velocity and changes in velocity are important uses of calculus, but it is far more widespread than that. 
+            Calculus is important in all branches of mathematics, science, and engineering, and it is critical to analysis in business and health as well. 
+            In this chapter, we explore one of the main tools of calculus, the derivative, and show convenient ways to calculate derivatives. 
+            We apply these rules to a variety of functions in this chapter so that we can then explore applications of these techniques.
+        </p>
+        <br>
+        <h2>What to expect?</h2>
+        <p>
+            Whether you're just beginning with calculus or looking to strengthen your understanding of derivatives, 
+            this resource provides a comprehensive look at one of calculus's most essential concepts. 
+            Here, you'll find a structured guide to mastering derivatives, 
+            from foundational definitions to advanced applications. 
+            Each chapter builds upon the last, breaking down complex ideas into manageable lessons.
+        </p>
+        <p>
+            Expect detailed explanations, step-by-step examples, and practical applications in physics, engineering, and beyond. 
+            By the end, you'll have the tools to tackle real-world problems and understand how derivatives 
+            help describe the dynamic changes that shape the world around us.
+        </p>
+        <br>
+        <h2>Contents:</h2>
+        <ol style="padding-left: 5%;"> <!-- Adds padding for outer list -->
+            <li>Formula Sheet
+                <ul style="padding-left: 5%; list-style-type: disc;"> <!-- Adds padding for nested list -->
+                    <li>General Formulae</li>
+                    <li>Trigonometric Formulae</li>
+                    <li>Hyperbolic Formulae</li>
+                    <li>Logarithmic and Exponential Formulae</li>
+                    <li>Parametric Equations</li>
+                </ul>
+            </li>
+            <li>Average and Instantaneous Rates of Change</li>
+            <li>Derivative of a Function</li>
+            <li>Derivative of Sine</li>
+        </ol>
+    </div>
+    <div style="padding: 1%; display: flex; justify-content: space-between;">
+        <a href="calc.html">
+            <button style="
+                padding: 10px 20px;
+                background-color: #3d405b;
+                color: #f4f1de;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            ">
+                ← Previous Page
+            </button>
+        </a>
+        
+        <a href="calc_formulasheet.html">
+            <button style="
+                padding: 10px 20px;
+                background-color: #3d405b;
+                color: #f4f1de;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+            ">
+                Next Page →
+            </button>
+        </a>
+    </div>
+    
+    
+    
+</body>
+</html>

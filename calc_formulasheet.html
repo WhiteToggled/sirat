@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirat| Calculus</title>
+    <link rel="stylesheet" href="calcstyles.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- Link to local KaTeX -->
+    <link rel="stylesheet" href="katex/katex.min.css">
+    <script defer src="katex/katex.min.js"></script>
+    <script defer src="katex/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    </script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="img/logo.png" alt="" class="logo">
+        <div class="buttons">
+            <div class="button">
+                List Courses ⌵
+                <ul class="dropdown">
+                    <li>
+                        <a href="pf.html">Programming Fundamentals</a>
+                    </li>
+                    <li>
+                        <a href="dm.html">Discrete Maths</a>
+                    </li>
+                    <li>
+                        <a href="calc.html">Calculus</a>
+                    </li>
+                    <li>
+                        <a href="ap.html">Applied Physics</a>
+                    </li>
+                    <li>
+                        <a href="aict.html">Applications of ICT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <a href="contributors.html">Contributors</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="padding: 1%;">
+        <h1>Formula Sheet</h1>
+
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: center;"><h2>General Formulae</h2></th>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ f (x) \]</td>
+                <td>\[ f'(x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ c \]</td>
+                <td>\[ 0 \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ c \cdot u \]</td>
+                <td>\[ c \cdot \frac{d}{dx} u \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ x^n \]</td>
+                <td>\[ n \cdot x^{n-1} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ u \pm v \]</td>
+                <td>\[ \frac{d}{dx} u \pm \frac{d}{dx} v \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ u \cdot v \]</td>
+                <td>\[ u \cdot \frac{d}{dx} v + v \cdot \frac{d}{dx} u \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \frac{hi}{lo} \]</td>
+                <td>\[ \frac{lo \cdot d hi - hi \cdot d lo}{lo^2} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ f (g (x)) \]</td>
+                <td>\[ f'(g(x)) \cdot g'(x) \]</td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><h2>Trigonometric Formulae</h2></td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sin (x) \]</td>
+                <td>\[ \cos (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cos (x) \]</td>
+                <td>\[ - \sin (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \tan (x) \]</td>
+                <td>\[ \sec^2 (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \csc (x) \]</td>
+                <td>\[ - \csc (x) \cdot \cot (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sec (x) \]</td>
+                <td>\[ \sec (x) \cdot \tan (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cot (x) \]</td>
+                <td>\[ - \csc^2 (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sin^{-1}(x) \]</td>
+                <td>\[ \frac{1}{\sqrt{1 - x^2}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cos^{-1}(x) \]</td>
+                <td>\[ - \frac{1}{\sqrt{1 - x^2}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \tan^{-1}(x) \]</td>
+                <td>\[ \frac{1}{1 + x^2} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cot^{-1}(x) \]</td>
+                <td>\[ - \frac{1}{1 + x^2} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sec^{-1}(x) \]</td>
+                <td>\[ \frac{1}{|x| \cdot \sqrt{x^2 - 1}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \csc^{-1}(x) \]</td>
+                <td>\[ - \frac{1}{|x| \cdot \sqrt{x^2 - 1}} \]</td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><h2>Hyperbolic Formulae</h2></td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sinh (x) \]</td>
+                <td>\[ \cosh (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cosh (x) \]</td>
+                <td>\[ \sinh (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \tanh (x) \]</td>
+                <td>\[ \operatorname{sech}^2 (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \coth (x) \]</td>
+                <td>\[ - \operatorname{csch}^2 (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \operatorname{sech} (x) \]</td>
+                <td>\[- \operatorname{sech} (x) \cdot \tanh (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \operatorname{csch} (x) \]</td>
+                <td>\[ - \operatorname{csch} (x) \cdot \coth (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \sinh^{-1}(x) \]</td>
+                <td>\[ \frac{1}{\sqrt{x^2 + 1}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \cosh^{-1}(x) \]</td>
+                <td>\[ \frac{1}{\sqrt{x^2 - 1}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \tanh^{-1}(x) \]</td>
+                <td>\[ \frac{1}{1 - x^2} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \coth^{-1}(x) \]</td>
+                <td>\[ \frac{1}{1 - x^2} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \operatorname{sech}^{-1}(x) \]</td>
+                <td>\[ - \frac{1}{|x| \cdot \sqrt{1 - x^2}} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \operatorname{csch}^{-1}(x) \]</td>
+                <td>\[ - \frac{1}{|x| \cdot \sqrt{1 + x^2}} \]</td>
+            </tr>
+            <tr>
+                <td colspan="2"><br></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><h2>Logarithmic and Exponential Formulae</h2></td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ e^x \]</td>
+                <td>\[ e^x \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ a^x \]</td>
+                <td>\[ a^x \cdot \ln (x) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ x^x \]</td>
+                <td>\[ x^x \cdot (\ln (x) + 1) \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \ln (x) \]</td>
+                <td>\[ \frac{1}{x} \]</td>
+            </tr>
+            <tr>
+                <td class="left-cell">\[ \log _a (x) \]</td>
+                <td>\[ \frac{1}{x \cdot \ln (x)} \]</td>
+            </tr>
+        </table>
+        <hr>
+        <h2 style="text-align: center;">Parametric Equations</h2>
+        <p>
+            Given \( x = f (t) \) and \( y = g (t) \) are differentiable, then <br>
+            \[ \frac{dy}{dx} = \frac{dy}{dt} \div \frac{dx}{dt} \]
+        </p>
+        <div style="padding: 1%; display: flex; justify-content: space-between;">
+            <a href="calc.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    ← Previous Page
+                </button>
+            </a>
+            
+            <a href="rate_of_change.html">
+                <button style="
+                    padding: 10px 20px;
+                    background-color: #3d405b;
+                    color: #f4f1de;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+                ">
+                    Next Page →
+                </button>
+            </a>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
